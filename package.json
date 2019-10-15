@@ -1,0 +1,24 @@
+{
+  "name": "mini-netflix",
+  "version": "1.0.0",
+  "description": "A mini-netflix web application with angular",
+  "main": "index.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve -o --prefix frontend",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manaraph/mini-netflix.git"
+  },
+  "author": "Manasseh Omachonu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manaraph/mini-netflix/issues"
+  },
+  "homepage": "https://github.com/manaraph/mini-netflix#readme"
+}
