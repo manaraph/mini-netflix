@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
 import { MovieThumbnailComponent } from './movies/movie-thumbnail/movie-thumbnail.component';
+import { FavoritesComponent } from './movies/favorites/favorites.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MovieThumbnailComponent } from './movies/movie-thumbnail/movie-thumbnai
     FooterComponent,
     MoviesComponent,
     MovieDetailComponent,
-    MovieThumbnailComponent
+    MovieThumbnailComponent,
+    FavoritesComponent
   ],
   imports: [
     BrowserModule,
