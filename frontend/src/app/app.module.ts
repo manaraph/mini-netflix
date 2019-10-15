@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
+import { MovieThumbnailComponent } from './movies/movie-thumbnail/movie-thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MovieDetailComponent } from './movies/movie-detail/movie-detail.compone
     RegisterComponent,
     FooterComponent,
     MoviesComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    MovieThumbnailComponent
   ],
   imports: [
     BrowserModule,
