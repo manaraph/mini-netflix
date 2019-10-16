@@ -1,3 +1,8 @@
+form div{
+  display: inline-block !important;
+  /* float: left; */
+}
+
 nav a {
   text-decoration: none;
 }
@@ -20,6 +25,11 @@ nav a {
   padding: 15px 0;
   transition: all 0.5s;
   border-bottom: 0.5px solid #eee;
+}
+
+.nav-link {
+  display: inline;
+  margin: 0.25em;
 }
 
 @media screen and (min-width: 767px) {
