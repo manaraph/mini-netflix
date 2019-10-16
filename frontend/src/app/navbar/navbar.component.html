@@ -9,25 +9,25 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse px-3" id="navbar">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 p-4">
+      <ul class="navbar-nav mt-2 mt-lg-0 p-4">
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" href="" [routerLink]="['/movies']">All Movies</a>
         </li>
-        <!-- <li *ngIf="!auth.isAuthenticated()" class="nav-item" [routerLinkActive]="['active']">
+        <!-- <li *ngIf="!isAuthenticated" class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" href="" [routerLink]="['/login']">Login</a>
         </li>
-        <li *ngIf="!auth.isAuthenticated()" class="nav-item" [routerLinkActive]="['active']">
+        <li *ngIf="!isAuthenticated" class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" href="" [routerLink]="['/register']">Register</a>
         </li> -->
       </ul>
-      <div class="navbar-header navbar-right">
+      <div class="navbar-header navbar-right ml-auto">
         <ul class="nav navbar-nav">
           <li>
-            <a *ngIf="auth.isAuthenticated()" class="nav-link" href="" (click)="logout()"
+            <a *ngIf="isAuthenticated" class="nav-link" href="" (click)="logout()"
               [routerLinkActive]="['active']">logout</a>
-            <a *ngIf="!auth.isAuthenticated()" [routerLink]="['/login']">Login</a>
-            <a *ngIf="auth.isAuthenticated()" [routerLink]="['/profile']" routerLinkActive="active">Welcome
-              {{ auth.currentUser.userName }} - {{ auth.currentUser.firstName }}</a>
+            <a *ngIf="!isAuthenticated" [routerLink]="['/login']">Login</a>
+            <a *ngIf="isAuthenticated" [routerLink]="['/profile']" routerLinkActive="active">Welcome
+              {{ currentUser.userName }}</a>
           </li>
         </ul>
       </div>
