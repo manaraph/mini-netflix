@@ -14,8 +14,8 @@
           <a class="nav-link" href="" [routerLink]="['/movies']">All Movies</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" href="" [routerLink]="['/favorites']">Favorites</a>
-          </li>
+          <a class="nav-link" href="" [routerLink]="['/favorites']">Favorites</a>
+        </li>
       </ul>
       <div class="mx-auto my-auto">
         <form id="searchForm" (ngSubmit)="searchMovies(searchTerm)" class="navbar-form navbar-right">
@@ -30,12 +30,16 @@
       </div>
       <div class="navbar-header navbar-right ml-auto">
         <ul class="nav navbar-nav">
-          <li class="">
-            <a *ngIf="isAuthenticated" [routerLink]="['/profile']" routerLinkActive="active">Welcome
-              m4{{ currentUser.userName }}</a>
-            <a *ngIf="isAuthenticated" class="nav-link" href="" (click)="logout()"
-              [routerLinkActive]="['active']">logout</a>
-            <a *ngIf="!isAuthenticated" [routerLink]="['/login']">Login</a>
+          <li class="dropdown">
+            <a *ngIf="isAuthenticated" class="dropdown-toggle" data-toggle="dropdown">
+              Welcome m4{{ currentUser.userName }}
+            <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu p-2">
+              <a *ngIf="isAuthenticated" class="nav-link" [routerLink]="['/profile']">Profile</a>
+              <a *ngIf="isAuthenticated" class="nav-link" (click)="logout()">logout</a>
+              <a *ngIf="!isAuthenticated" class="nav-link" [routerLink]="['/login']">Login</a>
+            </ul>
           </li>
         </ul>
       </div>

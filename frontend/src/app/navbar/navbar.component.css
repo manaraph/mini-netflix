@@ -32,6 +32,15 @@ nav a {
   margin: 0.25em;
 }
 
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-menu .nav-link {
+  display: block;
+  margin: 0;
+}
+
 @media screen and (min-width: 767px) {
   a {
     font-weight: 700;
