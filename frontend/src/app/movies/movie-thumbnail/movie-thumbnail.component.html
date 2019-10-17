@@ -1,1 +1,21 @@
-<p>movie-thumbnail works!</p>
+<div class=" sm-card">
+  <div class=" newCard my-flex">
+    <div class="">
+      <!-- <img class="k-img" [src]="setImage(movie.image)" onError="this.src='./assets/images/movie_img.svg';" /> -->
+    </div>
+    <div class="k-body">
+      <div class="k-btm">
+        <div class="k-info">
+          <div class="k-title">
+            {{((movie.title && movie.title.length>25)? (movie.title | slice:0:25)+'...':(movie.title)) | titlecase}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="items"></div>
+      <div class="items head" (click)="goToDetails(movie.courseUrl)">
+        <hr>
+      </div>
+    </div>
+  </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-movie-thumbnail',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-thumbnail.component.scss']
 })
 export class MovieThumbnailComponent implements OnInit {
+  @Input() movie = { id: '', title: '', image: '', year: 0, };
 
   constructor() { }
 
