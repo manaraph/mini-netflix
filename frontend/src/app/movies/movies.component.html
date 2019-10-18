@@ -1,8 +1,10 @@
 <div class="container">
-  <div class="row">
-    <div class="">
-      <div class="mt-2 mx-auto" *ngFor="let movie of movies">
-        <app-movie-thumbnail [movie]="movie" class="col-md-4"></app-movie-thumbnail>
+  <div class="my-5">
+    <h2 class="text-center">Recently Released</h2>
+    <hr/>
+    <div class="row mt-3">
+      <div class="col-md-4 p-3 rounded" *ngFor="let movie of movies">
+        <app-movie-thumbnail [movie]="movie" ></app-movie-thumbnail>
       </div>
     </div>
   </div>

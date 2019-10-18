@@ -1,0 +1,131 @@
+.k-body {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+}
+.k-img {
+  position: absolute;
+  width: 15.63rem;
+  height: 15.63rem;
+}
+.k-btm {
+  height: 15.63rem;
+  width: 15.63rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.k-info {
+  background: rgba(53, 176, 176, 0.95);
+  width: 15.63rem;
+  height: 3.75rem;
+  padding: 5px;
+  color: white;
+}
+
+.k-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newCard {
+  // border: 1px solid rgba(53, 176, 176, 0.95);
+  border: 2px solid #eee;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.overlay {
+  width: 100%;
+  height: 77%;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+
+  background: rgba(251, 251, 251, 0.9);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.items {
+  padding-left: 7px;
+  letter-spacing: 1px;
+}
+
+.head {
+  font-size: 13px;
+  color: #6d6d6d;
+  line-height: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  transform: translateY(40px);
+  transition: all 0.7s;
+  hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 1px #45b6b6;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+
+    transition: all 0.5s;
+  }
+}
+
+
+.newCard:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+
+  & hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+
+}
+
+.hover-item .top {
+  top: 20px;
+}
+
+// .rollover .hover-item {
+//   visibility: hidden;
+//   opacity: 0;
+//   z-index: 3;
+//   transition: opacity 0.3s ease-in-out;
+// }
+
+.rollover .bt-item.bt-default, .rollover .bt-item.bt-dark {
+  display: block;
+  min-width: 23px;
+  padding: 0 15px;
+  border: 1px solid rgba(255,255,255,0.5);
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .sm-card {
+    margin: 3px !important;
+  }
+}

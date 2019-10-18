@@ -1,7 +1,7 @@
-<div class=" sm-card">
-  <div class=" newCard my-flex">
+<div class="sm-card">
+  <div class="newCard">
     <div class="">
-      <!-- <img class="k-img" [src]="setImage(movie.image)" onError="this.src='./assets/images/movie_img.svg';" /> -->
+      <img class="k-img" [src]="setImage(movie.image)" onError="this.src='../../../assets/images/img.jpg';" />
     </div>
     <div class="k-body">
       <div class="k-btm">
@@ -9,13 +9,27 @@
           <div class="k-title">
             {{((movie.title && movie.title.length>25)? (movie.title | slice:0:25)+'...':(movie.title)) | titlecase}}
           </div>
+          <div class="my-1">
+            <div class="text-center">{{movie.year}}</div>
+          </div>
         </div>
       </div>
     </div>
     <div class="overlay">
       <div class="items"></div>
-      <div class="items head" (click)="goToDetails(movie.courseUrl)">
+      <div class="items head rollover">
+        <div class="hover-item top">
+          <div class="bt-item bt-default">
+            <svg fill="white">
+              <path
+                d="M7.504,14C-0.305,7.809-0.02,5.619,0.007,3.801C0.032,2.101,1.406,0,3.705,0s3.698,2.5,3.698,2.5 S8.902,0,11.201,0s3.798,2.101,3.798,3.801C14.999,5.601,15.198,7.801,7.504,14">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <span>vote here</span>
         <hr>
       </div>
     </div>
   </div>
+</div>
