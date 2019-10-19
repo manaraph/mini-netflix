@@ -105,24 +105,18 @@
   top: 20px;
 }
 
-// .rollover .hover-item {
-//   visibility: hidden;
-//   opacity: 0;
-//   z-index: 3;
-//   transition: opacity 0.3s ease-in-out;
-// }
-
 .rollover .bt-item.bt-default, .rollover .bt-item.bt-dark {
   display: block;
   min-width: 23px;
-  padding: 0 15px;
-  border: 1px solid rgba(255,255,255,0.5);
-  font-size: 12px;
+  // padding: 0 15px;
+  // border: 1px solid rgba(255,255,255,0.5);
+  // font-size: 12px;
   font-weight: 500;
   color: #fff;
   letter-spacing: 1px;
   line-height: 32px;
 }
+
 
 @media (max-width: 767px) {
   .sm-card {
