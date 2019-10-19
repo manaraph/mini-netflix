@@ -27,7 +27,7 @@
             </svg>
           </div> -->
         </div>
-        <span class="description">{{ movie.description}}</span>
+        <span class="description">{{ movie.description.length > 200 ? (movie.description | slice:0:200)+'...': movie.description }}</span>
         <hr class="mt-5 pt-5">
       </div>
     </div>
