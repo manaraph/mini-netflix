@@ -9,13 +9,8 @@
           <div class="k-title pt-2">
             {{((movie.title && movie.title.length>50)? (movie.title | slice:0:50)+'...':(movie.title)) }}
           </div>
-          <div class="row my-1">
-            <!-- <div class="col-md-7">
-                <rating [(ngModel)]="movie.rating"></rating>
-            </div> -->
-            <!-- <div class="col-md-5"> -->
-                <div class="text-center">{{movie.releaseYear}}</div>
-            <!-- </div> -->
+          <div class="my-1">
+            <div class="text-center">{{movie.releaseYear}}</div>
           </div>
         </div>
       </div>
