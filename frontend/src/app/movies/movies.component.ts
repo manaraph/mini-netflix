@@ -7,6 +7,7 @@ import { ApiService } from '../_services/api.service';
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent implements OnInit {
+  public searchText: string;
   movies;
 
   constructor(

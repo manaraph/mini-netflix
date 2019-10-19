@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MoviesComponent } from './movies/movies.component';
@@ -17,7 +18,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes),
+    Ng2SearchPipeModule,
+  ],
+  exports: [
+    RouterModule,
+    Ng2SearchPipeModule,
+  ]
 })
 export class AppRoutingModule { }

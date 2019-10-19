@@ -1,9 +1,15 @@
 <div class="container">
   <div class="my-5">
     <h2 class="text-center">Movies</h2>
+    <div class="searchInput justify-content-lg-start ml-2">
+      <input class="sp-head-text-lg form-control" type="text" name="search" [(ngModel)]="searchText"
+        autocomplete="off" placeholder=" Start searching">
+      <img src="assets/defaults/search.svg" width="18px" style="margin-top: 5px;" class="bkg-search">
+      <!-- <i class="glyphicon glyphicon-user"></i> -->
+    </div>
     <hr/>
     <div class="row mt-3" >
-      <div class="col-md-4 p-3 rounded" *ngFor="let movie of movies">
+      <div class="col-md-4 p-3 rounded" *ngFor="let movie of movies | filter:searchText">
         <app-movie-thumbnail [movie]="movie" ></app-movie-thumbnail>
       </div>
     </div>
