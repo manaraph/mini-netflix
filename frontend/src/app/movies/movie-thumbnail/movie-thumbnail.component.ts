@@ -12,6 +12,8 @@ export class MovieThumbnailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log(this.movie);
+    
   }
 
 

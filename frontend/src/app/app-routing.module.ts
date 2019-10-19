@@ -6,6 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
 import { FavoritesComponent } from './movies/favorites/favorites.component';
+import {RatingModule} from 'ngx-rating';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     Ng2SearchPipeModule,
+    RatingModule
   ],
   exports: [
     RouterModule,
