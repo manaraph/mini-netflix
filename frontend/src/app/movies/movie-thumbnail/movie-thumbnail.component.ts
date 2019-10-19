@@ -6,11 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./movie-thumbnail.component.scss']
 })
 export class MovieThumbnailComponent implements OnInit {
-  @Input() movie = { id: '', title: '', image: '', year: 0, };
+  @Input() movie;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit() {
   }
+
 
 }

@@ -5,20 +5,20 @@
 }
 .k-img {
   position: absolute;
-  width: 15.63rem;
-  height: 15.63rem;
+  width: 18.5rem;
+  height: 19.83rem;
 }
 .k-btm {
-  height: 15.63rem;
-  width: 15.63rem;
+  height: 19.83rem;
+  width: 18.5rem;
   display: flex;
   align-items: flex-end;
 }
 
 .k-info {
   background: rgba(53, 176, 176, 0.95);
-  width: 15.63rem;
-  height: 3.75rem;
+  width: 18.5rem;
+  height: 5rem;
   padding: 5px;
   color: white;
 }
@@ -32,8 +32,8 @@
 .newCard {
   // border: 1px solid rgba(53, 176, 176, 0.95);
   border: 2px solid #eee;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 320px;
   position: relative;
   top: 0;
   right: 0;
@@ -46,7 +46,7 @@
 
 .overlay {
   width: 100%;
-  height: 77%;
+  height: 75%;
   position: relative;
   top: 0;
   right: 0;

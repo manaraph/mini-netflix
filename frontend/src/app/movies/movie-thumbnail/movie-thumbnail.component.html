@@ -1,17 +1,17 @@
 <div class="sm-card">
   <div class="newCard">
-    <div class="">
-      <!-- <img class="k-img" [src]="setImage(movie.image)" onError="this.src='../../../assets/images/img.jpg';" /> -->
-      <img class="k-img" src="../avatar.jpg"/>
+    <div class="w-100">
+      <img class="k-img" [src]="movie.image.url" onError="this.src='../../../assets/images/img.jpg';" />
+      <!-- <img class="k-img" src="../avatar.jpg"/> -->
     </div>
     <div class="k-body">
       <div class="k-btm">
         <div class="k-info">
-          <div class="k-title">
-            {{((movie.title && movie.title.length>25)? (movie.title | slice:0:25)+'...':(movie.title)) | titlecase}}
+          <div class="k-title pt-2">
+            {{((movie.title && movie.title.length>50)? (movie.title | slice:0:50)+'...':(movie.title)) }}
           </div>
           <div class="my-1">
-            <div class="text-center">{{movie.year}}</div>
+            <div class="text-center">{{movie.releaseYear}}</div>
           </div>
         </div>
       </div>
