@@ -1,3 +1,29 @@
 .container {
   height: 100%;
 }
+
+.searchInput { 
+  position: relative; 
+}
+
+.search input { 
+  text-indent: 30px;
+}
+
+.search .search-img { 
+  position: absolute;
+  top: 24px;
+  left: 7px;
+  font-size: 15px;
+  display: inline;
+}
+
+// input {
+//   width: 450px;
+//   padding: 5px;
+//   margin: 15px;
+//   height: 25px;
+//   background-image: url('assets/defaults/search.svg');
+//   background-repeat: no-repeat;
+//   background-position: right;
+// }
