@@ -1,5 +1,5 @@
 <div class="sm-card">
-  <div class="newCard">
+  <div class="newCard" [routerLink]="['/movies', movie.objectId]">
     <div class="w-100">
       <img class="k-img" [src]="movie.image.url" onError="this.src='../../../assets/images/img.jpg';" />
     </div>
