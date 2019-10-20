@@ -9,5 +9,5 @@ export interface IUser {
   email: string;
   displayName: string;
   photoURL: string;
-  emailVerified: string;
+  // emailVerified: string;
 }

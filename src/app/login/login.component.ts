@@ -19,12 +19,16 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
-    private routter: Router,
+    private router: Router,
     // private authentication: AuthenticationService,
     private auth: AuthService,
   ) { }
 
   ngOnInit() {
+  }
+
+  signIn(email: any, password: any) {
+    // return this.auth.signIn(email, password);
   }
 
 }
