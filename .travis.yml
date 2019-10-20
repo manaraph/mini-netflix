@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 'node'
+# before_install:
+# - npm install -g @angular/cli
+install: npm install
+branches:
+  only:
+  - master
+# after_script:
+# - chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
+deploy:
+  provider: heroku
+  api_key:
+    secure: 8619e747-b4ed-4877-9482-f92dc39a66aa
+  app: ng-mini-netflix
