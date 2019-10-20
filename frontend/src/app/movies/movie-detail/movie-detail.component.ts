@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MovieDetailComponent implements OnInit {
   movie: object = {};
-  movieId: string = '';
+  movieId = '';
 
   constructor(
     private apiService: ApiService,
@@ -23,7 +23,6 @@ export class MovieDetailComponent implements OnInit {
   getmovie() {
     this.apiService.getAPIData().then( res => {
       this.movie = res['results'].find(movie => this.movieId === movie.objectId );
-      console.log(this.movie);
     }).catch(err => {
       console.log(err);
     });
