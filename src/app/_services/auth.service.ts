@@ -16,7 +16,18 @@ export class AuthService {
     private ngFireAuth: AngularFireAuth,
     private router: Router,
     private ngZone: NgZone
-  ) { }
+  ) {
+    this.ngFireAuth.authState.subscribe( user => {
+      if (user) {
+        this.userData = user;
+        localStorage.setItem('user', JSON.stringify(this.userData));
+        JSON.parse(localStorage.getItem('user'));
+      } else {
+        localStorage.setItem('user', null);
+        JSON.parse(localStorage.getItem('user'));
+      }
+    });
+   }
 
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));

@@ -42,7 +42,8 @@ import { AuthService } from './_services/auth.service';
     AngularFirestoreModule,
   ],
   providers: [
-    AuthService
+    AuthService,
+    AngularFirestoreModule,
   ],
   bootstrap: [AppComponent]
 })

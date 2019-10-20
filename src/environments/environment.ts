@@ -4,7 +4,16 @@
 
 export const environment = {
   production: false,
-  firebase: {}
+  firebase: {
+    apiKey: 'AIzaSyB-B_xGtfUMguiB9BS2qOlkxnPmJAAT7Mo',
+    authDomain: 'ng-mini-netflix.firebaseapp.com',
+    databaseURL: 'https://ng-mini-netflix.firebaseio.com',
+    projectId: 'ng-mini-netflix',
+    storageBucket: 'ng-mini-netflix.appspot.com',
+    messagingSenderId: '865864656388',
+    appId: '1:865864656388:web:638f703a8fd1b9db5df751',
+    measurementId: 'G-HBGNY7Z0QH'
+  }
 };
 
 
