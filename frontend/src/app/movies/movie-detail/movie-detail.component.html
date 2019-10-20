@@ -1,1 +1,31 @@
-<p>movie-detail works!</p>
+<div class="container my-5">
+  <div class="">
+    <div class="">
+      <div class="d-flex justify-content-center">
+        <img class="img w-50 h-50" [src]="movie.image?.url" onError="this.src='../../../assets/movie.jpg';" />
+      </div>
+      <div class="">
+        <h1 class="mt-3 text-center">
+          {{ movie.title }} <span>({{movie.releaseYear}})</span>
+        </h1>
+      </div>
+      <hr class="mt-3 mb-5">
+      <div class="row details my-5 p-5 ">
+        <div class="col-md-4 d-sm-none d-md-block">
+          <div class="">
+              <img class="img" width="250" height="250" [src]="movie.image?.url" onError="this.src='../../../assets/movie.jpg';" />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h3>Storyline</h3>
+          <span class="description">{{ movie.description }}</span>
+          <div class="my-3">
+              <span *ngFor="let genre of movie.genre" class="genre rounded border p-1 m-1 font-weight-bold">
+                {{genre}}
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

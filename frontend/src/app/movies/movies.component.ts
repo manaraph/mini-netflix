@@ -20,7 +20,7 @@ export class MoviesComponent implements OnInit {
 
   getApiData() {
     this.apiService.getAPIData().then( res => {
-      this.movies = res["results"];
+      this.movies = res['results'];
     }).catch(err => {
       console.log(err);
     });
