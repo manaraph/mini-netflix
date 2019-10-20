@@ -12,10 +12,10 @@ export class AuthService {
   userData: any;
 
   constructor(
-    public ngFirestore: AngularFirestore,
-    public ngFireAuth: AngularFireAuth,
-    public router: Router,
-    public ngZone: NgZone
+    private ngFirestore: AngularFirestore,
+    private ngFireAuth: AngularFireAuth,
+    private router: Router,
+    private ngZone: NgZone
   ) { }
 
   get isLoggedIn(): boolean {
