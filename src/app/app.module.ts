@@ -12,12 +12,14 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
 import { MovieThumbnailComponent } from './movies/movie-thumbnail/movie-thumbnail.component';
 import { FavoritesComponent } from './movies/favorites/favorites.component';
+import { LoginComponent2 } from './auth-test/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
+    LoginComponent2,
     RegisterComponent,
     FooterComponent,
     MoviesComponent,

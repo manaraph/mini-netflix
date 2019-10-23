@@ -1,3 +1,4 @@
+import { LoginComponent2 } from './auth-test/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
@@ -11,6 +12,7 @@ import { FavoritesComponent } from './movies/favorites/favorites.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'auth/login', component: LoginComponent2 },
   { path: 'register', component: RegisterComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'movies/:id', component: MovieDetailComponent },
