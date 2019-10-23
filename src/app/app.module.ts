@@ -13,6 +13,10 @@ import { MovieDetailComponent } from './movies/movie-detail/movie-detail.compone
 import { MovieThumbnailComponent } from './movies/movie-thumbnail/movie-thumbnail.component';
 import { FavoritesComponent } from './movies/favorites/favorites.component';
 import { LoginComponent2 } from './auth-test/login/login.component';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { environment } from 'src/environments/environment';
+import { AuthTokenHttpInterceptorProvider } from './auth-test/login/http-interceptors/auth-token.interceptor';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,7 @@ import { LoginComponent2 } from './auth-test/login/login.component';
     MoviesComponent,
     MovieDetailComponent,
     MovieThumbnailComponent,
-    FavoritesComponent
+    FavoritesComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +37,12 @@ import { LoginComponent2 } from './auth-test/login/login.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
   ],
-  providers: [],
+  providers: [
+    AuthTokenHttpInterceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

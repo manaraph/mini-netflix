@@ -26,6 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Credit
 
-## Credit 
-- (How to Deploy Angular Application to Heroku)[https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147]
+- [How to Deploy Angular Application to Heroku](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
+- [Angular 6 Tutorial: New Features with New Power](https://www.toptal.com/angular/angular-6-tutorial-new-features-power)
+- [Firebase Authentication in Angular with AngularFire2](https://alligator.io/angular/firebase-authentication-angularfire2/)
