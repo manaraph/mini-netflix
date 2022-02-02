@@ -2,6 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
+## Cloning Repository
+
+> git clone git@github.com:manaraph/mini-netflix.git
+
+## Installation and running app with npm
+
+```bash
+
+cd mini-netflix
+
+# install dependencies
+npm install
+
+# serve app at localhost:4200
+npm start
+
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -26,6 +44,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Credit
 
-## Credit 
 - (How to Deploy Angular Application to Heroku)[https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147]
